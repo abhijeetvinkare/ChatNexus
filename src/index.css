@@ -15,7 +15,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+body{
+    background-color: #EBECED;
+}
 ul{
     list-style: none;
 }
