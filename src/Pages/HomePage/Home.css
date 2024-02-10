@@ -1,10 +1,9 @@
 .home-container{
-    background-image:url(/src/assets/images/blob-scene-haikei.png) ;
+    background-image:url(/src/assets/svg/blob-scene-haikei.svg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 .btn-start-msg{
     background-color: var(--skin-color-second);
     color: var(--btn-color);
@@ -16,4 +15,10 @@
 }
 .left-heading-span{
     color: var(--title-color);
+}
+.home-left-div-para{
+    color: var(--text-color);
+}
+.home-right-div-img{
+    margin-top: 21px;
 }

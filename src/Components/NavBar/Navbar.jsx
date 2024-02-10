@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   return (
-    <div className="flex justify-between items-center max-sm:px-5 max-md:px-10 px-20 py-6">
+    <div className="flex justify-between items-center max-sm:px-5 max-md:px-10 px-28 py-6">
       <div>
         <h1 className="text-4xl font-bold brand-name-heading tracking-tight">Chatify</h1>
       </div>
