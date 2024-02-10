@@ -6,12 +6,12 @@ function Navbar() {
   return (
     <div className="flex justify-between items-center max-sm:px-5 max-md:px-10 px-20 py-6">
       <div>
-        <h1 className="text-3xl font-bold brand-name-heading">ChatNexus</h1>
+        <h1 className="text-4xl font-bold brand-name-heading tracking-tight">Chatify</h1>
       </div>
       <div className="flex justify-around items-center">
         <div className="nav-hamburger-btn-div">
           <button className="nav-hamburger-btn p-2 rounded-md">
-            <GiHamburgerMenu size={25} />
+            <GiHamburgerMenu size={20} />
           </button>
         </div>
         <div className="navbar-btn-div flex justify-around w-80 items-center">

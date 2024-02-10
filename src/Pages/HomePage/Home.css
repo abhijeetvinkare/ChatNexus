@@ -1,0 +1,19 @@
+.home-container{
+    background-image:url(/src/assets/images/blob-scene-haikei.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-start-msg{
+    background-color: var(--skin-color-second);
+    color: var(--btn-color);
+    margin-top: 15px;
+}
+.left-heading{
+    color: var(--skin-color-primary);
+    line-height: 1.1 !important;
+}
+.left-heading-span{
+    color: var(--title-color);
+}

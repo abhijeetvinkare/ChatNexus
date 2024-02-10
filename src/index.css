@@ -36,3 +36,18 @@ input{
     border: none;
     outline: none;
 }
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*===== Colors =====*/
+    --skin-color-primary: #FF7700;
+    --skin-color-second: #080ECB;
+    --title-color: #090437;
+    --text-color: #777777;
+    --body-color: #EBECED;
+    --box-color: #FBFBFB;
+    --btn-color: #FFFFFF;
+    --black-color: #1D2025;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+}
