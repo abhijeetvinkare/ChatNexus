@@ -50,4 +50,6 @@ input{
     --black-color: #1D2025;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+    /* 001220 */
 }
