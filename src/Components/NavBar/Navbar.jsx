@@ -1,12 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
-  const { loginWithRedirect } = useAuth0();
-
   return (
     <div className="flex justify-between items-center max-sm:px-5 max-md:px-10 px-28 py-6">
       <div>
@@ -21,15 +18,16 @@ function Navbar() {
           </button>
         </div>
         <div className="navbar-btn-div flex justify-around w-80 items-center">
-            <button onClick={() => loginWithRedirect()} className="btn-login-navbar py-2 px-3 w-24 font-bold rounded-md text-lg">
+          <NavLink to="/login">
+            <button className="btn-login-navbar py-2 px-3 w-24 font-bold rounded-md text-lg">
               Login
             </button>
-
-
+          </NavLink>
+          <NavLink to="/sign-up">
           <button className="btn-create-navbar py-3 px-5 rounded-lg font-medium hover:font-bold">
             Create Account
           </button>
-
+          </NavLink>
         </div>
       </div>
     </div>
