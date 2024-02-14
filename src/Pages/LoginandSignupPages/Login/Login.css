@@ -1,7 +1,26 @@
 .login-main{
-    background-image:url(/src/assets/svg/loginBack.svg) ;
+    /* background-image:url(/src/assets/svg/loginBack.svg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+.login-child-container{
+     background-color: var(--btn-color);
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     border-radius: 8px;
+}
+.login-form-input-div{
+    background: var(--body-color);
+    outline: 1px solid var(--skin-color-primary);
+}
+.login-form-input{
+    background: var(--body-color);
+}
+.login-form-btn-login{
+    background: var(--skin-color-second) !important;
+    color: var(--btn-color);
+}
+.login-form-btn-loginwithgoogle{
+    background: var(--body-color);
 }
