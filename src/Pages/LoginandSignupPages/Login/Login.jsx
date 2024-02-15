@@ -34,7 +34,7 @@ function Login() {
             />
           </div>
 
-          <button type="submit" className="login-form-btn-login w-full p-3">
+          <button type="submit" className="login-form-btn-login w-full p-3 font-semibold">
             Login
           </button>
         </form>
