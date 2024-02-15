@@ -2,14 +2,13 @@ import React from "react";
 import "./Login.css";
 import { NavLink } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
-import { IoIosMail } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import { RiLockPasswordFill } from "react-icons/ri";
 
 function Login() {
   return (
     <div className="login-main flex justify-center items-center">
-      <div className="login-child-container login-main flex items-center justify-center gap-7 flex-col w-96 h-5/6">
+      <div className="login-child-container login-main flex items-center justify-center gap-7 flex-col w-96 h-[530px]">
         <h1 className="text-4xl font-bold">Chatify</h1>
         <form className="flex items-center flex-col gap-7 w-64 mt-4">
           <div className="login-form-input-div flex items-center">
