@@ -9,12 +9,12 @@ function Login() {
   return (
     <div className="login-main flex justify-center items-center">
       <div className="login-child-container flex items-center justify-center gap-7 flex-col w-[350px] max-sm:w-80 h-[530px]">
-        <h1 className="text-4xl font-bold">Chatify</h1>
-        <form className="flex items-center flex-col gap-7 w-64 mt-4">
+        <h1 className="text-4xl font-bold mt-2">Chatify</h1>
+        <form className="flex items-center flex-col gap-8 w-64 mt-4">
           <div className="login-form-input-div flex items-center">
             <IoMdMail size={25} className="ml-2" />
             <input
-              className="login-form-input p-3 w-full"
+              className="login-form-input p-3 w-full font-medium text-lg"
               type="email"
               name=""
               id=""
@@ -25,7 +25,7 @@ function Login() {
           <div className="login-form-input-div flex items-center">
             <RiLockPasswordFill size={25} className="ml-2" />
             <input
-              className="login-form-input p-3 w-full"
+              className="login-form-input p-3 w-full font-medium text-lg"
               type="password"
               name=""
               id=""
