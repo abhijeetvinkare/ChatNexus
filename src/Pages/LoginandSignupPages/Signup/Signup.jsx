@@ -18,10 +18,10 @@ function Signup() {
 
   return (
     <div className="signup-main flex justify-center items-center">
-      <div className="login-child-container flex items-center justify-center gap-7 flex-col w-[350px] max-sm:w-80 h-[530px]">
+      <div className="login-child-container flex items-center justify-center gap-7 flex-col w-[350px] max-sm:w-80 h-[530px] rounded-xl">
         <h1 className="text-4xl font-bold mt-2">Chatify</h1>
         <form className="flex items-center flex-col gap-8 w-64 mt-4">
-        <div className="login-form-input-div flex items-center">
+        <div className="login-form-input-div flex items-center rounded-lg">
             <FaUser size={20} className="ml-2" />
             <input
               className="login-form-input p-3 w-full font-medium text-lg"
@@ -32,7 +32,7 @@ function Signup() {
               required
             />
           </div>
-          <div className="login-form-input-div flex items-center">
+          <div className="login-form-input-div flex items-center rounded-lg">
             <IoMdMail size={25} className="ml-2" />
             <input
               className="login-form-input p-3 w-full font-medium text-lg"
@@ -43,7 +43,7 @@ function Signup() {
               required
             />
           </div>
-          <div className="login-form-input-div flex items-center">
+          <div className="login-form-input-div flex items-center rounded-lg">
             <RiLockPasswordFill size={25} className="ml-2" />
             <input
               className="login-form-input p-3 w-full font-medium text-lg"
@@ -68,11 +68,11 @@ function Signup() {
             )}
           </div>
 
-          <button type="submit" className="login-form-btn-login w-full p-3 font-semibold">
+          <button type="submit" className="login-form-btn-login w-full p-3 font-semibold rounded-lg">
             Create Account
           </button>
         </form>
-        <span>
+        <span className="mt-8">
           Already have Account?{" "}
           <NavLink className="text-indigo-700 underline" to="/login">
             Log In
