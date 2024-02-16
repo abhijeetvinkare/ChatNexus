@@ -1,21 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import { IoMdMail } from "react-icons/io";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
-import { FaUserCircle } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+import "./Signup.css"
 
 function Signup() {
+  const [passwordShow, setPasswordShow] = useState(true);
+  const [inputType, setInputType] = useState("password");
+
+  function handlePasswordShow() {
+    setPasswordShow(!passwordShow)
+    setInputType(inputType === 'password' ? 'text' : 'password');
+  }
+
   return (
-    <div className="login-main flex justify-center items-center">
+    <div className="signup-main flex justify-center items-center">
       <div className="login-child-container flex items-center justify-center gap-7 flex-col w-[350px] max-sm:w-80 h-[530px]">
         <h1 className="text-4xl font-bold mt-2">Chatify</h1>
         <form className="flex items-center flex-col gap-8 w-64 mt-4">
         <div className="login-form-input-div flex items-center">
-            <FaUserCircle size={25} className="ml-2" />
+            <FaUser size={20} className="ml-2" />
             <input
               className="login-form-input p-3 w-full font-medium text-lg"
-              type="email"
+              type="text"
               name=""
               id=""
               placeholder="Name"
@@ -37,12 +47,25 @@ function Signup() {
             <RiLockPasswordFill size={25} className="ml-2" />
             <input
               className="login-form-input p-3 w-full font-medium text-lg"
-              type="password"
+              type={inputType}
               name=""
               id=""
               placeholder="Password"
               required
             />
+            {passwordShow ? (
+              <FaEye
+                size={25}
+                className="mr-2 cursor-pointer"
+                onClick={handlePasswordShow}
+              />
+            ) : (
+              <FaEyeSlash
+                size={25}
+                className="mr-2 cursor-pointer"
+                onClick={handlePasswordShow}
+              />
+            )}
           </div>
 
           <button type="submit" className="login-form-btn-login w-full p-3 font-semibold">

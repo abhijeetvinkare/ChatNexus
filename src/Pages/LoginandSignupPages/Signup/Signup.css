@@ -1,0 +1,6 @@
+.signup-main{
+    background-image:url(/src/assets/svg/signupBack.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
