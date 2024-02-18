@@ -11,7 +11,6 @@
 }
 .left-heading{
     color: var(--skin-color-primary);
-    line-height: 1.1 !important;
 }
 .left-heading-span{
     color: var(--title-color);

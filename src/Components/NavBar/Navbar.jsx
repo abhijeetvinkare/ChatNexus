@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import { MdLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
+import Cookies from "js-cookie";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleSwitch } from "../../redux/CounterSlice";
+
+const THEME_COOKIE_KEY = "theme";
 
 function Navbar() {
-  const [isDark, setisDark] = useState(false);
 
-  function handleisDark() {
-    setisDark(!isDark);
-  }
+    // Define state for dark mode
+    const isDarkMode = useSelector((state) => state.toggle.value)
+    const dispatch = useDispatch()
+  
+    useEffect(() => {
+      document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
+  
+      // Save theme in cookie
+      Cookies.set(THEME_COOKIE_KEY, isDarkMode ? "dark" : "light");
+      
+    }, [isDarkMode]);
+  
+    const toggleTheme = () => {
+      dispatch(toggleSwitch())
+    };
+
+    console.log(isDarkMode)
 
   return (
     <div className="flex justify-between items-center max-sm:px-5 max-xl:px-10 px-28 py-6 xl:px-[90px]">
@@ -21,10 +39,10 @@ function Navbar() {
       </div>
       <div className="flex justify-around items-center">
         <div className="mr-3 cursor-pointer">
-          {isDark ? (
-            <MdLightMode size={28} onClick={handleisDark} />
+          {isDarkMode ? (
+            <MdLightMode size={28} onClick={toggleTheme} />
           ) : (
-            <MdDarkMode size={28} onClick={handleisDark} />
+            <MdDarkMode size={28} onClick={toggleTheme} />
           )}
         </div>
         <div className="nav-hamburger-btn-div sm:hidden">
