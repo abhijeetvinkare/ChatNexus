@@ -1,5 +1,11 @@
-.signup-main{
+.signup-main-light{
     background-image:url(/src/assets/svg/signupBack.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.signup-main-dark{
+    background-image:url(/src/assets/svg/signupDark.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

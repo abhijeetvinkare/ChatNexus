@@ -1,6 +1,6 @@
-/* .brand-name-heading{
-    color: var(--btn-color);
-} */
+.brand-name-heading{
+    color: var(--logo-color);
+}
 .btn-login-navbar {
   outline: 1px solid var(--skin-color-primary);
   color: var(--title-color);

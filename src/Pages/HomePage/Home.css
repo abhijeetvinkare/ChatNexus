@@ -1,5 +1,11 @@
-.home-container{
+.home-container-light{
     background-image:url(/src/assets/svg/blob-scene-haikei.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-container-dark{
+    background-image:url(/src/assets/svg/homedark.svg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
