@@ -10,11 +10,26 @@
     background-size: cover;
     height: 100vh;
 }
+@media only screen and (max-width: 640px) {
+    .signup-main-light{
+        background-image:none;
+        background: var(--body-color);
+
+    }
+    .signup-main-dark{
+        background-image:none;
+        background: var(--body-color);
+    }
+}
 .signup-child-container{
     background-color: var(--box-color);
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     color: var(--text-color);
-    background: linear-gradient(var(--box-color), var(--box-color)) padding-box, linear-gradient(220deg, transparent 35%,#080ecb, #ff7700) border-box;
+}
+.signup-child-container-dark{
+    background-color: var(--box-color);
+    background: linear-gradient(var(--box-color), var(--box-color)) padding-box, linear-gradient(220deg, transparent -35%,#080ecb, #ff7700) border-box;
     border: 2px solid transparent;
+    color: var(--text-color);
+    box-shadow: rgba(7, 111, 180, 0.377) 0px 2px 70px 14px;
 }
