@@ -25,7 +25,7 @@ function Signup() {
         isDarkMode ? "signup-main-dark" : "signup-main-light"
       }`}
     >
-      <div className="login-child-container flex items-center justify-center gap-7 flex-col w-[350px] max-sm:w-80 h-[530px] rounded-xl">
+      <div className="signup-child-container flex items-center justify-center gap-7 flex-col w-[350px] max-sm:w-80 h-[530px] rounded-xl">
         <h1 className="text-4xl font-bold mt-2">Chatify</h1>
         <form className="flex items-center flex-col gap-8 w-64 mt-4">
           <div className="login-form-input-div flex items-center rounded-lg">

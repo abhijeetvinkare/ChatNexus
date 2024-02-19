@@ -62,7 +62,8 @@ input {
   --title-color: #03dac6;
   --text-color:#ffffff;
   --body-color: #001220;
-  --box-color: #000000;
+  --box-color: #1d1d2be0;; /*#020324e0*/
+  /* --box-color: #1d1d2be0;  */
   --btn-color: #ffffff;
   --logo-color:#FFFFFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 62%);
