@@ -25,7 +25,7 @@ function LeftChatList() {
         </div>
       </div>
       <div>
-        <h1></h1>
+        <h1>User List</h1>
       </div>
     </div>
   );
